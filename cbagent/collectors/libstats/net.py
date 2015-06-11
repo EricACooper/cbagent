@@ -32,7 +32,7 @@ class NetStat(RemoteStats):
                 "in_packets_per_sec": s2[1] - s1[1],
                 "out_packets_per_sec": s2[9] - s1[9],
             }
-         except:
+        except:
             return {
                 "in_bytes_per_sec": 0,
                 "out_bytes_per_sec": 0,
